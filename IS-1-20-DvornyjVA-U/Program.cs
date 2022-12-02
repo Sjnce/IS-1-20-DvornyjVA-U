@@ -16,7 +16,7 @@ namespace IS_1_20_DvornyjVA_U
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Menu());
         }
     }
 }
