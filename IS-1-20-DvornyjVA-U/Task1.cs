@@ -77,17 +77,17 @@ namespace IS_1_20_DvornyjVA_U
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // очистить листбокс
         {
             listBox1.Items.Clear();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) // вывести hdd
         {
             try
             {
                 hdd = new Hdd(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text,
-                    Convert.ToInt32(textBox4.Text), textBox5.Text, Convert.ToInt32(textBox10.Text));
+                    Convert.ToInt32(textBox4.Text), textBox5.Text, Convert.ToInt32(textBox6.Text));
                 listBox1.Items.Add(hdd.Display());
             }
             catch
@@ -96,12 +96,12 @@ namespace IS_1_20_DvornyjVA_U
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) // вывести cpu
         {
             try
             {
-                videocard = new Videocard(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox6.Text,
-                    Convert.ToInt32(textBox7.Text), textBox8.Text, Convert.ToInt32(textBox9.Text));
+                videocard = new Videocard(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox7.Text,
+                    Convert.ToInt32(textBox8.Text), textBox9.Text, Convert.ToInt32(textBox10.Text));
                 listBox1.Items.Add(videocard.Display());
             }
             catch
