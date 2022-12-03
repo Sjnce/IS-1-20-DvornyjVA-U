@@ -16,18 +16,18 @@ namespace IS_1_20_DvornyjVA_U
         {
             InitializeComponent();
         }
-        Hdd hdd;
-        Videocard videocard;
-        abstract class Accessories // абстрактный класс "Комплектующие"
+        Hdd <int> hdd;
+        Videocard <string> videocard;
+        abstract class Accessories <T>// абстрактный класс "Комплектующие" с обобщённым типом данных.
         {
-            public int Price; // цена
-            public string Old; // год выпуска
-            public string Articyl; // артикул
-            public Accessories(int price, string old, string articyl)
+            public int Price;       // цена
+            public string Old;      // год выпуска
+            public T Articyl { get; set; }  // артикул
+            public Accessories(int price, string old, T articyl)
             {
-                Price = price; // цена
-                Old = old; // год выпуска
-                Articyl = articyl; // артикул
+                Price = price;       // цена
+                Old = old;           // год выпуска
+                Articyl = articyl;   // артикул
             }
             public void Display()
             {
@@ -35,17 +35,17 @@ namespace IS_1_20_DvornyjVA_U
             }
         }
 
-        class Hdd : Accessories // класс "Жёсткие диски" + наследование класса "Комплектующие"
+        class Hdd <T> : Accessories <T> // класс "Жёсткие диски" + наследование класса "Комплектующие"
         {
-            int Turnovers { set; get; } // кол. оборотов
-            string Interface { set; get; } // интерфейс
-            int Volume { set; get; } // объём
-            public Hdd(int price, string old, string articyl, int turnovers, string face, int volume) 
+            int Turnovers { set; get; }     // кол. оборотов
+            string Interface { set; get; }  // интерфейс
+            int Volume { set; get; }        // объём
+            public Hdd(int price, string old, T articyl, int turnovers, string face, int volume) 
                 : base(price, old, articyl)
             {
-                Turnovers = turnovers; // кол. оборотов
-                Interface = face; // интерфейс
-                Volume = volume; // объём
+                Turnovers = turnovers;      // кол. оборотов
+                Interface = face;           // интерфейс
+                Volume = volume;            // объём
             }
 
             public new string Display() // вывод информации
@@ -54,17 +54,17 @@ namespace IS_1_20_DvornyjVA_U
             }
         }
 
-        class Videocard : Accessories // класс "Видеокарта" + наследование класса "Комплектующие"
+        class Videocard <T> : Accessories <T> // класс "Видеокарта" + наследование класса "Комплектующие"
         {
-            int GPU_frequency { set; get; } // частота gpu
-            string Manufacturer { set; get; } // производитель
-            int Memory { set; get; } // объём памяти
-            public Videocard(int price, string old, string articyl, int gpu, string manufacturer, int memory) 
+            int GPU_frequency { set; get; }     // частота gpu
+            string Manufacturer { set; get; }   // производитель
+            int Memory { set; get; }            // объём памяти
+            public Videocard(int price, string old, T articyl, int gpu, string manufacturer, int memory) 
                 : base(price, old, articyl)
             {
-                GPU_frequency = gpu; // частота gpu
-                Manufacturer = manufacturer; // производитель
-                Memory = memory; // объём памяти
+                GPU_frequency = gpu;            // частота gpu
+                Manufacturer = manufacturer;    // производитель
+                Memory = memory;                // объём памяти
             }
             public new string Display() // вывод информации
             {
@@ -86,7 +86,7 @@ namespace IS_1_20_DvornyjVA_U
         {
             try
             {
-                hdd = new Hdd(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox3.Text,
+                hdd = new Hdd <int> (Convert.ToInt32(textBox1.Text), textBox2.Text, Convert.ToInt32(textBox3.Text),
                     Convert.ToInt32(textBox4.Text), textBox5.Text, Convert.ToInt32(textBox6.Text));
                 listBox1.Items.Add(hdd.Display());
             }
@@ -100,7 +100,7 @@ namespace IS_1_20_DvornyjVA_U
         {
             try
             {
-                videocard = new Videocard(Convert.ToInt32(textBox1.Text), textBox2.Text, textBox7.Text,
+                videocard = new Videocard <string> (Convert.ToInt32(textBox1.Text), textBox2.Text, textBox7.Text,
                     Convert.ToInt32(textBox8.Text), textBox9.Text, Convert.ToInt32(textBox10.Text));
                 listBox1.Items.Add(videocard.Display());
             }
