@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IS_1_20_DvornyjVA_U
+namespace Task1
 {
-    public partial class Task2 : Form
+    public partial class Form1 : Form
     {
-        public Task2()
+        public Form1()
         {
             InitializeComponent();
         }
