@@ -50,5 +50,10 @@ namespace IS_1_20_DvornyjVA_U
                 MessageBox.Show("Не выполненно!");  // Вывод при провале
             }
         }
+
+        private void Task2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

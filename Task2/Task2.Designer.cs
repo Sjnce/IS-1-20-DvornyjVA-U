@@ -50,6 +50,7 @@ namespace IS_1_20_DvornyjVA_U
             this.Controls.Add(this.button1);
             this.Name = "Task2";
             this.Text = "Task2";
+            this.Load += new System.EventHandler(this.Task2_Load);
             this.ResumeLayout(false);
 
         }

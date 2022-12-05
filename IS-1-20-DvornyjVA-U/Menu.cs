@@ -34,7 +34,7 @@ namespace IS_1_20_DvornyjVA_U
             T2.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) // открытие 3 задания
         {
             Task3 T3 = new Task3();
             T3.ShowDialog();
