@@ -16,15 +16,15 @@ namespace Task3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Task3());
+            Application.Run(new Task3x());
         }
         public class ConnectSQL              // Класс СУБД с данными
         {
-            public string Host = "chuc.caseum.ru";     // Хост
-            public string Port = "33333";              // Порт
-            public string User = "uchebka";            // Пользователь
-            public string Database = "uchebka";        // База данных
-            public string Password = "uchebka";        // Пароль
+            public string Host = "chuc.caseum.ru";                  // Хост
+            public string Port = "33333";                           // Порт
+            public string User = "st_1_20_10";                      // Пользователь
+            public string Database = "is_1_20__st10_KURS";        // База данных
+            public string Password = "34088849";                    // Пароль
             public string connStr;
             public string Conect() // Подключение к СУБД типа MySQL и метод возврата строки подключения
             {

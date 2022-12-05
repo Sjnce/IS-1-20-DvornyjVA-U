@@ -152,11 +152,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Task3.cs">
+    <Compile Include="Task3x.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Task3.Designer.cs">
-      <DependentUpon>Task3.cs</DependentUpon>
+    <Compile Include="Task3x.Designer.cs">
+      <DependentUpon>Task3x.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -169,8 +169,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Task3.resx">
-      <DependentUpon>Task3.cs</DependentUpon>
+    <EmbeddedResource Include="Task3x.resx">
+      <DependentUpon>Task3x.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

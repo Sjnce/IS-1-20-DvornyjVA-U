@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Task3;
 
 namespace IS_1_20_DvornyjVA_U
 {
@@ -36,7 +37,7 @@ namespace IS_1_20_DvornyjVA_U
 
         private void button3_Click(object sender, EventArgs e) // открытие 3 задания
         {
-            Task3 T3 = new Task3();
+            Task3x T3 = new Task3x();
             T3.ShowDialog();
         }
     }

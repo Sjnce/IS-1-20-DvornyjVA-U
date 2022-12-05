@@ -1,7 +1,7 @@
 ﻿
 namespace Task3
 {
-    partial class Task3
+    partial class Task3x
     {
         /// <summary>
         /// Обязательная переменная конструктора.
