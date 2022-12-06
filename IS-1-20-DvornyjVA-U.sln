@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4", "Task4\Task4.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectDB", "ConnectDB\ConnectDB.csproj", "{031C36B5-CBCA-4FB0-94A0-11617DCA171B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task5", "Task5\Task5.csproj", "{B1B617C3-8CC4-4C2A-9B45-54AF38A80EEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{031C36B5-CBCA-4FB0-94A0-11617DCA171B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{031C36B5-CBCA-4FB0-94A0-11617DCA171B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{031C36B5-CBCA-4FB0-94A0-11617DCA171B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1B617C3-8CC4-4C2A-9B45-54AF38A80EEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1B617C3-8CC4-4C2A-9B45-54AF38A80EEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1B617C3-8CC4-4C2A-9B45-54AF38A80EEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1B617C3-8CC4-4C2A-9B45-54AF38A80EEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
