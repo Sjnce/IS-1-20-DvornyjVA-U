@@ -25,7 +25,7 @@ namespace Task4
             f2.Conect();
             conn = new MySqlConnection(f2.connStr);
         }
-        ConnectSQL f2 = new ConnectSQL();// обявление переменной класса 
+        ConnectSQL f2 = new ConnectSQL();
         MySqlConnection conn;
         private BindingSource bSource = new BindingSource();
         private MySqlDataAdapter MyDA = new MySqlDataAdapter();
@@ -47,18 +47,18 @@ namespace Task4
             conn.Open();
             table.Clear();
             table.Columns.Clear();
-            string com = "SELECT * FROM t_datatime;"; //команда для вызова всех столбцов в таблице
+            string com = "SELECT * FROM t_datatime;"; // Команда для вызова всех столбцов в таблице
             MyDA.SelectCommand = new MySqlCommand(com, conn);
             dataGridView1.DataSource = bSource;
             bSource.DataSource = table;
             MyDA.Fill(table);
-            //не показывает 1 и 4 стобец
+            // Не показывает 1 и 4 стобец
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[3].Visible = false;
-            // не дает в них ничего менять
+            // Не дает в них ничего менять
             dataGridView1.Columns[1].ReadOnly = true;
             dataGridView1.Columns[2].ReadOnly = true;
-            // делает столбцы по всей длине
+            // Делает столбцы по всей длине
             dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             conn.Close();

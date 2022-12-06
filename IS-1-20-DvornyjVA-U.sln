@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3", "Task3\Task3.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4", "Task4\Task4.csproj", "{6DF06D71-E15C-44B5-8D12-81FA3BA494EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectDB", "ConnectDB\ConnectDB.csproj", "{031C36B5-CBCA-4FB0-94A0-11617DCA171B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectDB", "ConnectDB\ConnectDB.csproj", "{031C36B5-CBCA-4FB0-94A0-11617DCA171B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
