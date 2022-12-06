@@ -29,7 +29,7 @@ namespace Task3
             conn = new MySqlConnection(MySQL.connStr);
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e) // Датагрид
         {
             try
             {
@@ -40,11 +40,11 @@ namespace Task3
             }
             catch
             {
-                MessageBox.Show("Ошибка!");
+                MessageBox.Show("Ошибка!"); // Выдаёт при ошибке
             }
             finally
             {
-                conn.Close();
+                conn.Close(); // Закрытие
             }
         }
 
@@ -52,24 +52,26 @@ namespace Task3
         {
             try
             {
-                conn.Open();
-                string coooom = "SELECT Client.id_cl,Client.fio_cl,Orders.id_or,Orders.data_or,tariff.Name_ta FROM Orders INNER JOIN Client ON Client.id_cl = Orders.id_cl;"; // это команда с INNER JOIN 
-                dataGridView1.Columns.Add("id_cl", "ID Клиента");
+                conn.Open(); // Открытие
+                string connStr = "SELECT id_cl, cl_name_U, fam_U, id_car_U, car_name_U, car_color_U FROM Car_U INNER JOIN Client_U ON id_car_U = id_cl ORDER BY id_car_U;"; // это команда с INNER JOIN 
+                dataGridView1.Columns.Add("id_cl", "ID Клиента"); 
                 dataGridView1.Columns["id_cl"].Width = 100;
-                dataGridView1.Columns.Add("fio_cl", "Имя");
-                dataGridView1.Columns["fio_cl"].Width = 100;
-                dataGridView1.Columns.Add("id_or", "ID");
-                dataGridView1.Columns["id_or"].Width = 100;
-                dataGridView1.Columns.Add("data_or", "Дата");
-                dataGridView1.Columns["data_or"].Width = 100;
-                dataGridView1.Columns.Add("Name_ta", "Билет");
-                dataGridView1.Columns["Name_ta"].Width = 100;
-                MySqlCommand command = new MySqlCommand(coooom, conn);
+                dataGridView1.Columns.Add("cl_name_U", "Имя"); 
+                dataGridView1.Columns["cl_name_U"].Width = 100;
+                dataGridView1.Columns.Add("fam_U", "фамилия"); 
+                dataGridView1.Columns["fam_U"].Width = 100;
+                dataGridView1.Columns.Add("id_car_U", "ид авто"); 
+                dataGridView1.Columns["id_car_U"].Width = 100;
+                dataGridView1.Columns.Add("car_name_U", "имя авто"); 
+                dataGridView1.Columns["car_name_U"].Width = 100;
+                dataGridView1.Columns.Add("car_color_U", "цвет авто");
+                dataGridView1.Columns["car_color_U"].Width = 100;
+                MySqlCommand command = new MySqlCommand(connStr, conn);
                 MySqlDataReader reader = command.ExecuteReader();
-                while (reader.Read()) // Чтение данных
+                while (reader.Read()) //чтение данных из бд
                 {
-                    dataGridView1.Rows.Add(reader["id_cl"].ToString(), reader["fio_cl"].ToString(), reader["id_or"].ToString(),
-                        reader["data_or"].ToString(), reader["Name_ta"].ToString());
+                    dataGridView1.Rows.Add(reader["id_cl"].ToString(), reader["cl_name_U"].ToString(), reader["fam_U"].ToString(),
+                        reader["id_car_U"].ToString(), reader["car_name_U"].ToString(), reader["car_color_U"].ToString());
                 }
                 reader.Close();
             }

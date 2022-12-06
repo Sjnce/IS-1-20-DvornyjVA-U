@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Task3;
+using Task4;
 
 namespace IS_1_20_DvornyjVA_U
 {
@@ -39,6 +40,12 @@ namespace IS_1_20_DvornyjVA_U
         {
             Task3x T3 = new Task3x();
             T3.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Task4z T4 = new Task4z();
+            T4.ShowDialog();
         }
     }
 }
