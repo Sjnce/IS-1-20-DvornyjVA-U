@@ -36,7 +36,7 @@ namespace IS_1_20_DvornyjVA_U
             // 
             this.button1.Location = new System.Drawing.Point(12, 23);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 83);
+            this.button1.Size = new System.Drawing.Size(452, 299);
             this.button1.TabIndex = 0;
             this.button1.Text = "Подключиться к СУБД";
             this.button1.UseVisualStyleBackColor = true;
@@ -46,9 +46,10 @@ namespace IS_1_20_DvornyjVA_U
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(228, 124);
+            this.ClientSize = new System.Drawing.Size(476, 334);
             this.Controls.Add(this.button1);
             this.Name = "Task2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Task2";
             this.Load += new System.EventHandler(this.Task2_Load);
             this.ResumeLayout(false);

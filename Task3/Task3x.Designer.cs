@@ -52,14 +52,15 @@ namespace Task3
             this.dataGridView1.Size = new System.Drawing.Size(463, 254);
             this.dataGridView1.TabIndex = 1;
             // 
-            // Task3
+            // Task3x
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(569, 392);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
-            this.Name = "Task3";
+            this.Name = "Task3x";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Task3";
             this.Load += new System.EventHandler(this.Task3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

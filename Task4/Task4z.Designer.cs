@@ -73,6 +73,7 @@ namespace Task4
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Task4z";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Task4";
             this.Load += new System.EventHandler(this.Task4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

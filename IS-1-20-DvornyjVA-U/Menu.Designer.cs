@@ -108,6 +108,7 @@ namespace IS_1_20_DvornyjVA_U
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu.cs";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

@@ -283,6 +283,7 @@ namespace IS_1_20_DvornyjVA_U
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Task1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Task1";
             this.Load += new System.EventHandler(this.Task1_Load);
             this.ResumeLayout(false);

@@ -42,16 +42,16 @@ namespace Task5
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 73);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 155);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(440, 121);
+            this.dataGridView1.Size = new System.Drawing.Size(527, 181);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(207, 55);
+            this.button1.Size = new System.Drawing.Size(242, 137);
             this.button1.TabIndex = 1;
             this.button1.Text = "Обновить информацию";
             this.button1.UseVisualStyleBackColor = true;
@@ -59,9 +59,9 @@ namespace Task5
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(245, 12);
+            this.button2.Location = new System.Drawing.Point(297, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(207, 55);
+            this.button2.Size = new System.Drawing.Size(242, 137);
             this.button2.TabIndex = 2;
             this.button2.Text = "Изменить данные";
             this.button2.UseVisualStyleBackColor = true;
@@ -69,14 +69,14 @@ namespace Task5
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(11, 200);
+            this.textBox1.Location = new System.Drawing.Point(12, 342);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(228, 20);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(11, 226);
+            this.textBox2.Location = new System.Drawing.Point(12, 368);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(228, 20);
             this.textBox2.TabIndex = 4;
@@ -84,7 +84,7 @@ namespace Task5
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(242, 203);
+            this.label1.Location = new System.Drawing.Point(243, 345);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 5;
@@ -93,7 +93,7 @@ namespace Task5
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(242, 229);
+            this.label2.Location = new System.Drawing.Point(243, 371);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 6;
@@ -103,7 +103,7 @@ namespace Task5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 255);
+            this.ClientSize = new System.Drawing.Size(551, 411);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
@@ -112,6 +112,7 @@ namespace Task5
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Task5c";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Task5c";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
